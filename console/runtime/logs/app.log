@@ -1,0 +1,80 @@
+2021-10-13 07:59:04 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(758): m140506_102106_rbac_init->up()
+#2 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-app\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-app\yii(23): yii\base\Application->run()
+#12 {main}
+2021-10-13 07:59:01 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ARCHAEO-LAPTOP-002\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SHILT6O'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ARCHAEO-LAPTOP-002'
+    'LOCALAPPDATA' => 'C:\\Users\\ARCHAEO-LAPTOP-002\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SHILT6O'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ARCHAEO-LAPTOP-002\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\HP\\IdrsOCR_15.2.10.1114\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ARCHAEO-LAPTOP-002\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ARCHAEO-LAPTOP-002\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ARCHAEO-LAPTOP-002\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\PROGRA~1\\KMSpico\\temp'
+    'TMP' => 'C:\\PROGRA~1\\KMSpico\\temp'
+    'USERDOMAIN' => 'DESKTOP-SHILT6O'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SHILT6O'
+    'USERNAME' => 'ARCHAEO-LAPTOP-002'
+    'USERPROFILE' => 'C:\\Users\\ARCHAEO-LAPTOP-002'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-app\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-app\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-app\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-app\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-app\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1634104741.6365
+    'REQUEST_TIME' => 1634104741
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-app\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
